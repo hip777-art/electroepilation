@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Электроэпиляция</title>
+    <meta name="description" content="" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ["Inter", "ui-sans-serif", "system-ui"] },
+            colors: {
+              brand: {
+                600: "#6366f1",
+                700: "#4f46e5",
+                800: "#4338ca",
+              },
+            },
+            boxShadow: { soft: "0 10px 30px rgba(0,0,0,0.08)" },
+          },
+        },
+      };
+    </script>
+    <style>
+      .bg-grid {
+        background-image: radial-gradient(
+          circle at 1px 1px,
+          rgba(0, 0, 0, 0.06) 1px,
+          transparent 0
+        );
+        background-size: 24px 24px;
+      }
+    </style>
+  </head>
+  <body class="antialiased text-slate-800 bg-slate-50">
+    <!-- Navbar -->
+    <header
+      class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b border-slate-200/60"
+    >
+      <div class="max-w-7xl mx-auto px-4 md:px-6">
+        <div class="flex items-center justify-between h-16">
+          <a href="#" class="flex items-center gap-2">
+            <span class="font-semibold">Julia Ama</span>
+          </a>
+          <nav class="hidden md:flex items-center gap-6">
+            <a href="#benefits" class="hover:text-brand-700 transition"
+              >Преимущества</a
+            >
+            <a href="#process" class="hover:text-brand-700 transition"
+              >Процесс</a
+            >
+            <a href="#pricing" class="hover:text-brand-700 transition">Цены</a>
+            <a href="#contact" class="hover:text-brand-700 transition"
+              >Контакты</a
+            >
+          </nav>
+          <a
+            href="#contact"
+            class="hidden md:inline-block px-4 py-2 rounded-xl bg-brand-700 text-white hover:bg-brand-800 transition shadow-soft"
+            >Записаться</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero" class="relative overflow-hidden">
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-brand-50 via-white to-fuchsia-50"
+      ></div>
+      <div
+        class="relative max-w-7xl mx-auto px-4 md:px-6 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center"
+      >
+        <div>
+          <h1
+            class="text-4xl md:text-5xl font-semibold leading-tight text-slate-900"
+          >
+            Электроэпиляция для идеальной гладкости
+          </h1>
+          <p class="mt-5 text-lg text-slate-600">
+            Надёжный и проверенный метод удаления волос навсегда. Индивидуальный
+            подход и забота о вашей коже.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a
+              href="#contact"
+              class="px-5 py-3 rounded-xl bg-brand-700 text-white hover:bg-brand-800 transition shadow-soft"
+              >Записаться</a
+            >
+          </div>
+        </div>
+        <div class="relative">
+          <a href="#contact">
+            <div
+              class="aspect-[4/3] rounded-3xl shadow-soft border border-slate-200 bg-cover bg-center"
+              style="
+                background-image: url('https://media.istockphoto.com/id/1460105832/photo/woman-legs-and-beauty-in-studio-for-skin-grooming-and-hygiene-treatment-against-grey-a.jpg?b=1&s=612x612&w=0&k=20&c=XlvWFkZKW5cUG54iAKwYnM3UAqhrmeYiPP8w6POMjwo=');
+              "
+            ></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section
+      id="benefits"
+      class="py-16 md:py-24 bg-gradient-to-b from-white to-slate-50"
+    >
+      <div class="max-w-7xl mx-auto px-4 md:px-6">
+        <div class="grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-semibold">
+              Почему стоит выбрать электроэпиляцию?
+            </h2>
+            <p class="mt-3 text-slate-600">
+              Это единственный метод удаления волос, который гарантированно
+              разрушает волосяной фолликул и исключает повторный рост волос.
+              Ваше решение для долговременной гладкости и уверенности.
+            </p>
+            <ul class="mt-6 space-y-3 text-slate-700">
+              <li>
+                ✨ <span class="font-medium">Навсегда:</span> волосы не
+                возвращаются, результат остаётся на всю жизнь.
+              </li>
+              <li>
+                ✨ <span class="font-medium">Для всех зон:</span> подходит даже
+                для чувствительных областей лица и тела.
+              </li>
+              <li>
+                ✨ <span class="font-medium">Универсальность:</span> эффективно
+                для любого типа и цвета волос, в том числе светлых и пушковых.
+              </li>
+              <li>
+                ✨ <span class="font-medium">Безопасность:</span> процедура
+                проводится стерильно и с максимальным комфортом для клиента.
+              </li>
+            </ul>
+          </div>
+          <div
+            class="aspect-[4/3] rounded-3xl shadow-soft border border-slate-200 bg-cover bg-center"
+            style="
+              background-image: url('https://tatuazhka.com.ua/wp-content/uploads/2025/04/electroepilation-1.jpg');
+            "
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section id="process" class="py-16 md:py-24">
+      <div class="max-w-7xl mx-auto px-4 md:px-6">
+        <div class="text-center max-w-2xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-semibold">
+            Как проходит процедура?
+          </h2>
+          <p class="mt-3 text-slate-600">
+            Электроэпиляция — это точный и деликатный процесс, обеспечивающий
+            стойкий результат. Мы сопровождаем вас на каждом этапе.
+          </p>
+        </div>
+        <div class="mt-10 grid md:grid-cols-4 sm:grid-cols-2 gap-6">
+          <div
+            class="p-6 rounded-2xl bg-white border border-slate-200 shadow-soft"
+          >
+            <div
+              class="w-10 h-10 rounded-full grid place-content-center bg-brand-600 text-white font-semibold"
+            >
+              1
+            </div>
+            <h3 class="mt-4 font-semibold">Консультация</h3>
+            <p class="mt-2 text-slate-600">
+              Обсуждаем ваши цели, противопоказания и выбираем оптимальный план.
+            </p>
+          </div>
+          <div
+            class="p-6 rounded-2xl bg-white border border-slate-200 shadow-soft"
+          >
+            <div
+              class="w-10 h-10 rounded-full grid place-content-center bg-brand-600 text-white font-semibold"
+            >
+              2
+            </div>
+            <h3 class="mt-4 font-semibold">Подготовка кожи</h3>
+            <p class="mt-2 text-slate-600">
+              Кожа обрабатывается антисептиком для максимальной безопасности и
+              комфорта.
+            </p>
+          </div>
+          <div
+            class="p-6 rounded-2xl bg-white border border-slate-200 shadow-soft"
+          >
+            <div
+              class="w-10 h-10 rounded-full grid place-content-center bg-brand-600 text-white font-semibold"
+            >
+              3
+            </div>
+            <h3 class="mt-4 font-semibold">Процедура</h3>
+            <p class="mt-2 text-slate-600">
+              Тонкая игла подаёт микроток прямо в фолликул, разрушая его
+              навсегда.
+            </p>
+          </div>
+          <div
+            class="p-6 rounded-2xl bg-white border border-slate-200 shadow-soft"
+          >
+            <div
+              class="w-10 h-10 rounded-full grid place-content-center bg-brand-600 text-white font-semibold"
+            >
+              4
+            </div>
+            <h3 class="mt-4 font-semibold">Уход после</h3>
+            <p class="mt-2 text-slate-600">
+              Даём рекомендации по уходу, чтобы кожа оставалась здоровой и
+              гладкой.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-16 md:py-24 bg-white">
+      <div class="max-w-4xl mx-auto px-4 md:px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-semibold">Цены</h2>
+        <p class="mt-4 text-lg text-slate-600">
+          Прозрачная и понятная стоимость процедуры
+        </p>
+        <div
+          class="mt-10 rounded-2xl border-2 border-brand-600 bg-gradient-to-br from-white to-slate-50 p-8 shadow-soft inline-block"
+        >
+          <h3 class="text-2xl font-semibold text-slate-900">Электроэпиляция</h3>
+          <p class="mt-2 text-4xl font-bold text-brand-700">
+            700 грн
+            <span class="text-lg font-medium text-slate-600">/ час</span>
+          </p>
+          <p class="mt-4 text-slate-600 max-w-xl mx-auto">
+            Обычно для комфортного и заметного результата рекомендуется 1–2 часа
+            на сеанс. Продолжительность подбирается индивидуально, исходя из
+            зоны и особенностей кожи.
+          </p>
+          <a
+            href="#contact"
+            class="mt-6 inline-block px-6 py-3 rounded-xl bg-brand-700 text-white hover:bg-brand-800 transition shadow-soft"
+            >Записаться</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 md:py-24 bg-slate-50">
+      <div class="max-w-5xl mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-10">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-semibold">Свяжитесь со мной</h2>
+          <p class="mt-3 text-slate-600">
+            Я с радостью отвечу на ваши вопросы и помогу выбрать удобное время
+            для процедуры.
+          </p>
+          <div class="mt-6 space-y-3 text-slate-700 text-lg">
+            <p>
+              📞 <span class="font-semibold">Телефон:</span>
+              <a href="tel:+380675600067" class="text-brand-700 hover:underline"
+                >+38 (067) 560-00-67</a
+              >
+            </p>
+            <p>
+              📷 <span class="font-semibold">Instagram:</span>
+              <a
+                href="https://www.instagram.com/juliaa.ama_?igsh=MTY3M3ZqczM3ZWx3Mw=="
+                target="_blank"
+                class="text-brand-700 hover:underline"
+                >@juliaa.ama_</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft"
+        >
+          <form id="contactForm" class="space-y-4">
+            <input
+              type="text"
+              id="name"
+              placeholder="Имя"
+              required
+              class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-600"
+            />
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Телефон"
+              required
+              class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-600"
+            />
+            <textarea
+              id="comment"
+              placeholder="Комментарий"
+              rows="4"
+              class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-600"
+            ></textarea>
+            <button
+              type="submit"
+              class="w-full bg-brand-700 hover:bg-brand-800 text-white py-3 rounded-xl font-semibold transition"
+            >
+              Отправить
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const name = document.getElementById("name").value.trim();
+          const phone = document.getElementById("phone").value.trim();
+          const comment = document.getElementById("comment").value.trim();
+
+          const now = new Date();
+          const date = now.toLocaleDateString("ru-RU");
+          const time = now.toLocaleTimeString("ru-RU");
+
+          const token = "8285864975:AAHmnHv8nqRX_IKzziFLL_5I7CySgQsGXqU"; // ⚠️ Замени при необходимости
+          const chatId = "6479536769"; // ⚠️ Замени при необходимости
+
+          const message = `📝 <b>НОВАЯ ЗАЯВКА</b>\n\n📅 <b>Дата:</b> ${date}\n⏰ <b>Время:</b> ${time}\n\n👤 <b>Имя:</b> ${name}\n📞 <b>Телефон:</b> ${phone}\n💬 <b>Комментарий:</b> ${comment}`;
+
+          fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              chat_id: chatId,
+              text: message,
+              parse_mode: "HTML",
+            }),
+          })
+            .then((res) => {
+              if (res.ok) {
+                alert("✅ Спасибо! Ваша заявка успешно отправлена.");
+                document.getElementById("contactForm").reset();
+              } else {
+                alert("❌ Ошибка при отправке. Попробуйте позже.");
+              }
+            })
+            .catch(() => {
+              alert("⚠️ Не удалось соединиться с сервером.");
+            });
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer class="py-10 border-t border-slate-200 bg-white/70">
+      <div
+        class="max-w-7xl mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center justify-between gap-4"
+      >
+        <div class="text-sm text-slate-500">
+          © 2025 Электроэпиляция. Все права защищены.
+        </div>
+        <div class="flex items-center gap-4 text-sm text-slate-500">
+          <a href="#pricing" class="hover:text-slate-700 transition">Цены</a>
+          <a href="#contact" class="hover:text-slate-700 transition"
+            >Контакты</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
